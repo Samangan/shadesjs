@@ -1,4 +1,3 @@
-"using strict";
 
 var buster = require("buster");
 var assert = buster.assertions.assert;
