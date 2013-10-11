@@ -1,0 +1,30 @@
+{
+  "name": "shadesjs",
+  "version": "0.0.0",
+  "description": "Darken and Brighten elements on a webpage.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Samangan/Shadesjs.git"
+  },
+  "keywords": [
+    "shadesjs"
+  ],
+  "author": "Harry Hull",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Samangan/Shadesjs/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib": "~0.7.0",
+    "grunt-contrib-compress": "~0.5.2",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-buster": "~0.2.2"
+  }
+}
