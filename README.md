@@ -1,5 +1,5 @@
-Shadejs
-=======
+Shadesjs
+========
 
 
 This is a javscript library that allows the user to darken or brighten elements on a webpage.
@@ -10,7 +10,7 @@ Right now I am just playing around with this idea to see if it feasible. One kin
 Tech stack:
 -----------
 
- * Javscript
+ * Jquery
  * grunt for building
  * busterjs for testing
  * jshint for linting
