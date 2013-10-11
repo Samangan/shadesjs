@@ -4,6 +4,9 @@ var buster = require("buster");
 var assert = buster.assertions.assert;
 var shade = require("../src/shade.js");
 
+//TODO: I need to actually test accessing a document and grabbing DOM elements
+//switch from buster to doctest.js http://doctestjs.org/try.html (Should I use karma as well (http://karma-runner.github.io/0.10/index.html))
+
 
 //TODO: add test to determine if I could get the color from a jquery selector element
 buster.testCase("Get color from jquery element", {
