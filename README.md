@@ -17,5 +17,4 @@ Tech stack:
 
  * [jQuery](http://jquery.com/)
  * [Grunt](http://gruntjs.com/) for building
- * [BusterJS](busterjs.org) for testing
  * [JSHint](http://www.jshint.com/) for linting

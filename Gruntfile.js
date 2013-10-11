@@ -25,6 +25,14 @@ module.exports = function(grunt) {
         port: 1111
       }
     },
+    // Karma config
+    karma: {
+      unit: {
+        configFile: 'karma.conf.js',
+        runnerPort: 9999,
+        singleRun: true,
+      }
+    },
     // Zip everything up
     compress: {
       target: {
@@ -61,6 +69,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-buster');
+  grunt.loadNpmTasks('grunt-karma');
 
   // Define your tasks here
   grunt.registerTask('default', ['jshint', 'buster', 'compress', 'uglify', 'copy']);
