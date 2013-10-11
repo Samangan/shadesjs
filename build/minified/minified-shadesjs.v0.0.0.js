@@ -1,1 +1,1 @@
-"using strict";
+"using strict";!function(){var Shadejs={};Shadejs.getColor=function(element){console.log(element);var color="rgb:(255, 50, 255)";return color},module.exports=Shadejs}();
