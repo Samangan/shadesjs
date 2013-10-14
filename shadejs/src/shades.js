@@ -3,8 +3,8 @@
 	var elements = {};
 
 	//TODO: make the following configurable
-	//var brightenFactor = ;
-	//var darkenFactor = ;
+	var brightenFactor = 1.25;
+	var darkenFactor = 0.8;
 	
 	var Shadesjs = window.Shadesjs = function Shadesjs() {
 		elements = Shadesjs._getAllElementsToShade();
@@ -39,7 +39,6 @@
 	};
 
 	Shadesjs.Brighten = function ( ) {
-		//TODO: Implement
 		if (elements) {
 			for (var i = 0; i < elements.length; i++) {
 				var color = Shadesjs._getColor(elements[i]);
@@ -47,11 +46,11 @@
 				if (color) {
 					var rgbaVals = Shadesjs._getRGBA(color);
 					
-					var r = rgbaVals[0];
-					var g = rgbaVals[1];
-					var b = rgbaVals[2];
+					var r = Math.min(255, rgbaVals[0] * brightenFactor); 
+					var g = Math.min(255, rgbaVals[1] * brightenFactor);
+					var b = Math.min(255, rgbaVals[2] * brightenFactor);
 					if (rgbaVals.length === 4){
-						var a = rgbaVals[3];
+						var a = rgbaVals[3] ;
 						Shadesjs._setColor(elements[i], "rgba(" + r + ", " + g + ", " + b + ", " + a + ")");
 					} else {
 						Shadesjs._setColor(elements[i], "rgb(" + r + ", " + g + ", " + b + ")");
@@ -62,13 +61,26 @@
 	};
 
 	Shadesjs.Darken = function ( ) {
-		//TODO: Implement
-	};
+		if (elements) {
+			for (var i = 0; i < elements.length; i++) {
+				var color = Shadesjs._getColor(elements[i]);
 
-	/* TODO:
-		*  ('public') function that increases brightness for elementToShade elements
-		*  ('public') function that decreases brightness for elementToShade elements
-	*/
+				if (color) {
+					var rgbaVals = Shadesjs._getRGBA(color);
+					
+					var r = Math.min(255, rgbaVals[0] * darkenFactor); 
+					var g = Math.min(255, rgbaVals[1] * darkenFactor);
+					var b = Math.min(255, rgbaVals[2] * darkenFactor);
+					if (rgbaVals.length === 4){
+						var a = rgbaVals[3];
+						Shadesjs._setColor(elements[i], "rgba(" + r + ", " + g + ", " + b + ", " + a + ")");
+					} else {
+						Shadesjs._setColor(elements[i], "rgb(" + r + ", " + g + ", " + b + ")");
+					}
+				}
+			}
+		}
+	};
 
 	Shadesjs._configuration = {};
 	Shadesjs._defaultConfiguration = {
