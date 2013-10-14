@@ -1,7 +1,7 @@
 
 (function () {
 	var elements = {};
-
+	
 	//TODO: make the following configurable
 	var brightenFactor = 1.25;
 	var darkenFactor = 0.8;
@@ -27,7 +27,7 @@
 	};
 
 	Shadesjs._setColor = function(element, color) {
-		element.style.backgroundColor = color;
+		element.style.setProperty("background-color", color, null); 
 	};
 
 	Shadesjs._getRGBA = function(color) {

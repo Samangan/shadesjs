@@ -27,7 +27,7 @@
 	};
 
 	Shadesjs._setColor = function(element, color) {
-		element.style.backgroundColor = color;
+		element.style.setProperty("background-color", color, null); 
 	};
 
 	Shadesjs._getRGBA = function(color) {
@@ -81,11 +81,6 @@
 			}
 		}
 	};
-
-	/* TODO:
-		*  ('public') function that increases brightness for elementToShade elements
-		*  ('public') function that decreases brightness for elementToShade elements
-	*/
 
 	Shadesjs._configuration = {};
 	Shadesjs._defaultConfiguration = {
