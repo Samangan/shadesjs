@@ -1,1 +1,1 @@
-!function(){var Shadesjs={};Shadesjs.getColor=function(element){console.log(element);var color=window.getComputedStyle(element,null).getPropertyValue("background-color");return console.log(color),color}}();
+!function(){var Shadesjs=window.Shadesjs=function(){};Shadesjs._getColor=function(element){console.log(element);var color=window.getComputedStyle(element,null).getPropertyValue("background-color");return console.log(color),color}}();

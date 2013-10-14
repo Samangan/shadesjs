@@ -72,6 +72,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-karma');
 
   // Define your tasks here
-  grunt.registerTask('default', ['jshint', 'buster', 'compress', 'uglify', 'copy']);
+  grunt.registerTask('default', ['jshint', 'compress', 'uglify', 'copy']);
 
 };
