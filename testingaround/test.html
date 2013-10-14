@@ -5,39 +5,6 @@
     
     <title>Testing Around</title>
     <script src="../build/shadejs/src/shades.js"></script>
-    <script type="text/javascript">
-        var allElements = document.getElementsByTagName("*");
-
-
-        setInterval(function () {            
-            for (var i = 0; i < allElements.length; i++){
-                var color = getColor(allElements[i]);
-
-                if (color) {
-                    var r = getRandomInt(0, 255);
-                    var g = getRandomInt(0, 255);
-                    var b = getRandomInt(0, 255);
-                    var a = getRandomArbitary(0, 1.0);
-                    allElements[i].style.backgroundColor = "rgba(" + r + ", " + g + ", " + b + ", " + a + ")";
-                }
-
-        }
-        }, 3000);
-
-        function getColor (element) {
-            var color = window.getComputedStyle(element, null).getPropertyValue("background-color");
-            return color;
-        }
-
-        function getRandomInt (min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-
-        function getRandomArbitary (min, max) {
-            return Math.random() * (max - min) + min;
-        }
-
-    </script>
 </head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Zeinodin_Caravanserai skin-vector action-view vector-animateLayout">
         <div id="mw-page-base" class="noprint"></div>
