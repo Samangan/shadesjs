@@ -4,9 +4,382 @@
 <head>
     
     <title>Testing Around</title>
-    <script type="text/javascript" src="../build/shadejs/src/shade.js"></script>
+    <script type="text/javascript">
+        var allElements = document.getElementsByTagName("*");
+
+
+        setInterval(function () {            
+            for (var i = 0; i < allElements.length; i++){
+                var color = getColor(allElements[i]);
+
+                if (color) {
+                    var r = getRandomInt(0, 255);
+                    var g = getRandomInt(0, 255);
+                    var b = getRandomInt(0, 255);
+                    var a = getRandomArbitary(0, 1.0);
+                    allElements[i].style.backgroundColor = "rgba(" + r + ", " + g + ", " + b + ", " + a + ")";
+                }
+
+        }
+        }, 3000);
+
+        function getColor (element) {
+            var color = window.getComputedStyle(element, null).getPropertyValue("background-color");
+            return color;
+        }
+
+        function getRandomInt (min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function getRandomArbitary (min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+    </script>
 </head>
-<body>
-   
-</body>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Zeinodin_Caravanserai skin-vector action-view vector-animateLayout">
+        <div id="mw-page-base" class="noprint"></div>
+        <div id="mw-head-base" class="noprint"></div>
+        <div id="content" class="mw-body" role="main">
+            <a id="top"></a>
+            <div id="mw-js-message" style="display:none;"></div>
+                        <div id="siteNotice"><!-- CentralNotice --></div>
+                        <h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Zeinodin Caravanserai</span></h1>
+            <div id="bodyContent">
+                                <div id="siteSub">From Wikipedia, the free encyclopedia</div>
+                                <div id="contentSub"></div>
+                                                <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="#mw-navigation">navigation</a>,                    <a href="#p-search">search</a>
+                </div>
+                <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox vcard" cellspacing="3" style="border-spacing:3px;width:22em;">
+<tr>
+<th colspan="2" class="fn org" style="text-align:center;font-size:125%;font-weight:bold;">Zeinodin Caravanserai<br />
+Zein-o-Din Caravanserai</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center;"><span class="nickname">زين الدين</span></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center;"><a href="/wiki/File:Zeinodin_Caravanserai.jpg" class="image"><img alt="Zeinodin Caravanserai.jpg" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8d/Zeinodin_Caravanserai.jpg/240px-Zeinodin_Caravanserai.jpg" width="240" height="180" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8d/Zeinodin_Caravanserai.jpg/360px-Zeinodin_Caravanserai.jpg 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8d/Zeinodin_Caravanserai.jpg/480px-Zeinodin_Caravanserai.jpg 2x" /></a><br />
+<div>Zeinodin Caravanserai</div>
+</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color:#ededed;">General information</th>
+</tr>
+<tr>
+<th scope="row" style="text-align:left;">Type</th>
+<td class="category"><a href="/wiki/Caravanserai" title="Caravanserai">Caravanserai</a></td>
+</tr>
+<tr>
+<th scope="row" style="text-align:left;">Architectural style</th>
+<td class="category"><a href="/wiki/Safavid_art" title="Safavid art">Safavid style</a></td>
+</tr>
+<tr>
+<th scope="row" style="text-align:left;">Location</th>
+<td class="label">Zein-o-din, <a href="/wiki/Yazd" title="Yazd">Yazd</a>, Iran</td>
+</tr>
+<tr>
+<th scope="row" style="text-align:left;">Address</th>
+<td><a href="/wiki/Yazd" title="Yazd">Yazd</a> – <a href="/wiki/Kerman" title="Kerman">Kerman</a> Road, The <a href="/wiki/Silk_Road" title="Silk Road">Silk Road</a></td>
+</tr>
+<tr>
+<th scope="row" style="text-align:left;"><span class="nowrap">Construction started</span></th>
+<td>16th century</td>
+</tr>
+<tr>
+<th scope="row" style="text-align:left;">Client</th>
+<td><a href="/wiki/Shah_Abbas_I" title="Shah Abbas I" class="mw-redirect">Shah Abbas I</a></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color:#ededed;">Technical details</th>
+</tr>
+<tr>
+<th scope="row" style="text-align:left;">Floor count</th>
+<td>2</td>
+</tr>
+</table>
+<p>The <b>Zein-o-Din Caravanserai</b> (زين الدين) is located in Zein-o-din, <a href="/wiki/Yazd" title="Yazd">Yazd</a>, Iran. The <a href="/wiki/Caravanserai" title="Caravanserai">caravanserai</a> dates to the 16th century and is situated on the ancient <a href="/wiki/Silk_Road" title="Silk Road">Silk Road</a>. It is one of 999 such inns that was built during the reign of <a href="/wiki/Shah_Abbas_I" title="Shah Abbas I" class="mw-redirect">Shah Abbas I</a> to provide facilities to travelers. Of these, Zeinodin is one of two caravanserais built with circular towers. After its refurbishment, it has operated as an inn. A similarly-built caravanserai near <a href="/wiki/Esfahan" title="Esfahan" class="mw-redirect">Esfahan</a> is in ruins.<sup id="cite_ref-Iran_1-0" class="reference"><a href="#cite_note-Iran-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-Our_2-0" class="reference"><a href="#cite_note-Our-2"><span>[</span>2<span>]</span></a></sup></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Geography"><span class="tocnumber">1</span> <span class="toctext">Geography</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Background"><span class="tocnumber">2</span> <span class="toctext">Background</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Architecture_and_fittings"><span class="tocnumber">4</span> <span class="toctext">Architecture and fittings</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Features"><span class="tocnumber">5</span> <span class="toctext">Features</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="Geography">Geography</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Zeinodin_Caravanserai&amp;action=edit&amp;section=1" title="Edit section: Geography">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The caravanserai is situated on the Silk Road which was, until 1500,<sup id="cite_ref-derelict_3-0" class="reference"><a href="#cite_note-derelict-3"><span>[</span>3<span>]</span></a></sup> the main trade route between Europe and Asia. A motorway to Yazd passes through Zeinodin. In earlier centuries, it was reached after a two-day camel ride from south of Yazd, about 60 kilometres (37&#160;mi) on the main road to <a href="/wiki/Kerman" title="Kerman">Kerman</a>.<sup id="cite_ref-FOOTNOTEPlanetBurke2012456_4-0" class="reference"><a href="#cite_note-FOOTNOTEPlanetBurke2012456-4"><span>[</span>4<span>]</span></a></sup><sup id="cite_ref-ancient_5-0" class="reference"><a href="#cite_note-ancient-5"><span>[</span>5<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Background">Background</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Zeinodin_Caravanserai&amp;action=edit&amp;section=2" title="Edit section: Background">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The caravanserai's exterior view appears like a "derelict ruin" though its interior is well furbished in its original form making it an "atmospheric and fascinating" place to stay.<sup id="cite_ref-derelict_3-1" class="reference"><a href="#cite_note-derelict-3"><span>[</span>3<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Zeinodin_Caravanserai&amp;action=edit&amp;section=3" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The first caravanserais were reported 2500 years ago, when Persia was ruled by <a href="/wiki/Achaemenid_Empire" title="Achaemenid Empire">Achaemenid Empire</a>.<sup id="cite_ref-ancient_5-1" class="reference"><a href="#cite_note-ancient-5"><span>[</span>5<span>]</span></a></sup> During the <a href="/wiki/Safavid" title="Safavid" class="mw-redirect">Safavid</a> period in Iran, caravanserais were established at convenient sites at a distance of every 20 to 30 miles along the trade routes across the country. Many such buildings were built on old and new caravan routes under the direction of Shah Abbas I (1587–1629) and Shah Abbas II (1642–66). The caravanserai is one of the 999 such hostels built to promote trade. An entry fee was charged along with a daily fee for an 8ft square room. The rooms were fitted with a fireplace and servants had a separate place to stay. The caretaker of the caravanserai was legally authorized to collect sales tax and oversee all transactions; and they at times tended to overcharge and cheat the merchants. It was incumbent on the caretakers to provide security to the merchants and their goods against theft. The running of the caravanserais in Iran was considered at par with those that were run during the <a href="/wiki/Ottoman_Empire" title="Ottoman Empire">Ottoman Empire</a>.<sup id="cite_ref-FOOTNOTELevi200242_6-0" class="reference"><a href="#cite_note-FOOTNOTELevi200242-6"><span>[</span>6<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Architecture_and_fittings">Architecture and fittings</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Zeinodin_Caravanserai&amp;action=edit&amp;section=4" title="Edit section: Architecture and fittings">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The caravanserai is a two-storied structures, square in plan, with a courtyard and a water pool. Only two caravanserais have been built with circular towers. One of these is the Zeinodin Caravanserai and the other, in a ruined state, is near Esfahan. This caravanserai has withstood inclement weather as it was initially well built. <sup id="cite_ref-FOOTNOTEBurkeMaxwellShearer2012456_7-0" class="reference"><a href="#cite_note-FOOTNOTEBurkeMaxwellShearer2012456-7"><span>[</span>7<span>]</span></a></sup> Its recent renovation took three years to complete, and included the use of 13,000 pumice stones to remove the grime on the interior walls.<sup id="cite_ref-Iran_1-1" class="reference"><a href="#cite_note-Iran-1"><span>[</span>1<span>]</span></a></sup> Restored to a near original state, the rooms are on a raised base and mattresses are provided on the floor, which are covered with carpets. There is no door separating the rooms from the corridor, only a curtain provides privacy to the occupants. However, the common bathroom facility is well fitted.<sup id="cite_ref-Iran_1-2" class="reference"><a href="#cite_note-Iran-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-FOOTNOTEBurkeMaxwellShearer2012456_7-1" class="reference"><a href="#cite_note-FOOTNOTEBurkeMaxwellShearer2012456-7"><span>[</span>7<span>]</span></a></sup> The building accommodates 60 to 80 tourists daily; tourists from 70 countries are reported to have stayed here.<sup id="cite_ref-ancient_5-2" class="reference"><a href="#cite_note-ancient-5"><span>[</span>5<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Zeinodin_Caravanserai&amp;action=edit&amp;section=5" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As the caravanserai is located away from the city, the noise level is minimum and the night skies are clear and star studded. An amateur astronomer conducts astronomy lectures on the rooftop.<sup id="cite_ref-FOOTNOTEBurkeMaxwellShearer2012456_7-2" class="reference"><a href="#cite_note-FOOTNOTEBurkeMaxwellShearer2012456-7"><span>[</span>7<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Zeinodin_Caravanserai&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Iran-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-Iran_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Iran_1-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Iran_1-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://thongtinkhcn.vinhlong.gov.vn/junkbox/Du+lich/Iran5th_Edition/Iran5th+Edition++July+2008/central-iran_v1_m56577569830512248.pdf">"Central Iran"</a> (pdf). Official website of thongtinkhcn. p.&#160;267<span class="reference-accessdate">. Retrieved 20 September 2011</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AZeinodin+Caravanserai&amp;rft.btitle=Central+Iran&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fthongtinkhcn.vinhlong.gov.vn%2Fjunkbox%2FDu%2Blich%2FIran5th_Edition%2FIran5th%2BEdition%2B%2BJuly%2B2008%2Fcentral-iran_v1_m56577569830512248.pdf&amp;rft.pages=267&amp;rft.pub=Official+website+of+thongtinkhcn&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Our-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-Our_2-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="https://www.sfcir.org/wp-content/uploads/2010/09/Improved-FINAL-CIRcular-Spring-2011.pdf">"Engaging our Community in World Affairs"</a> (pdf). Santa Fe Council of International Relations. Spring 2011<span class="reference-accessdate">. Retrieved 20 September 2013</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AZeinodin+Caravanserai&amp;rft.btitle=Engaging+our+Community+in+World+Affairs&amp;rft.date=Spring+2011&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fwww.sfcir.org%2Fwp-content%2Fuploads%2F2010%2F09%2FImproved-FINAL-CIRcular-Spring-2011.pdf&amp;rft.pub=Santa+Fe+Council+of+International+Relations&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-derelict-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-derelict_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-derelict_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.docstoc.com/docs/101542917/NAC-Front-_amp-Back">"North and central Asia"</a>. Docstoc.com. pp.&#160;43, 62<span class="reference-accessdate">. Retrieved 20 September 2013</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AZeinodin+Caravanserai&amp;rft.btitle=North+and+central+Asia&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.docstoc.com%2Fdocs%2F101542917%2FNAC-Front-_amp-Back&amp;rft.pages=43%2C+62&amp;rft.pub=Docstoc.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-FOOTNOTEPlanetBurke2012456-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTEPlanetBurke2012456_4-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFPlanetBurke2012">Planet &amp; Burke 2012</a>, p.&#160;456.</span></li>
+<li id="cite_note-ancient-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-ancient_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ancient_5-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-ancient_5-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://english.cctv.com/program/cultureexpress/20100127/101397.shtml">"Iran revives ancient caravanserai"</a>. CCTV.com. 27 January 2010<span class="reference-accessdate">. Retrieved 20 September 2013</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AZeinodin+Caravanserai&amp;rft.btitle=Iran+revives+ancient+caravanserai&amp;rft.date=27+January+2010&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fenglish.cctv.com%2Fprogram%2Fcultureexpress%2F20100127%2F101397.shtml&amp;rft.pub=CCTV.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-FOOTNOTELevi200242-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-FOOTNOTELevi200242_6-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFLevi2002">Levi 2002</a>, p.&#160;42.</span></li>
+<li id="cite_note-FOOTNOTEBurkeMaxwellShearer2012456-7"><span class="mw-cite-backlink">^ <a href="#cite_ref-FOOTNOTEBurkeMaxwellShearer2012456_7-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-FOOTNOTEBurkeMaxwellShearer2012456_7-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-FOOTNOTEBurkeMaxwellShearer2012456_7-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><a href="#CITEREFBurkeMaxwellShearer2012">Burke, Maxwell &amp; Shearer 2012</a>, p.&#160;456.</span></li>
+</ol>
+</div>
+<dl>
+<dt>Bibliography</dt>
+</dl>
+<ul>
+<li><span id="CITEREFLevi2002" class="citation book">Levi, Scott Cameron (January 2002). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=9qVkNBge8mIC&amp;pg=PA42"><i>The Indian Diaspora in Central Asia and Its Trade: 1550 – 1900</i></a>. BRILL. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-90-04-12320-5" title="Special:BookSources/978-90-04-12320-5">978-90-04-12320-5</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AZeinodin+Caravanserai&amp;rft.aufirst=Scott+Cameron&amp;rft.aulast=Levi&amp;rft.au=Levi%2C+Scott+Cameron&amp;rft.btitle=The+Indian+Diaspora+in+Central+Asia+and+Its+Trade%3A+1550+%E2%80%93+1900&amp;rft.date=January+2002&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D9qVkNBge8mIC%26pg%3DPA42&amp;rft.isbn=978-90-04-12320-5&amp;rft.pub=BRILL&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span id="CITEREFBurkeMaxwellShearer2012" class="citation book">Burke, Andrew; Maxwell, Virginia; Shearer, Iain (1 June 2012). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=TY0GUQjhDX0C&amp;pg=PT456"><i>Lonely Planet Iran</i></a>. Lonely Planet. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-74321-320-9" title="Special:BookSources/978-1-74321-320-9">978-1-74321-320-9</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AZeinodin+Caravanserai&amp;rft.au=Burke%2C+Andrew&amp;rft.aufirst=Andrew&amp;rft.aulast=Burke&amp;rft.au=Maxwell%2C+Virginia&amp;rft.au=Shearer%2C+Iain&amp;rft.btitle=Lonely+Planet+Iran&amp;rft.date=1+June+2012&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DTY0GUQjhDX0C%26pg%3DPT456&amp;rft.isbn=978-1-74321-320-9&amp;rft.pub=Lonely+Planet&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;">
+<tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit;">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="noprint plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Iranian_architecture" title="Template:Iranian architecture"><span title="View this template" style=";;background:none transparent;border:none;;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Iranian_architecture" title="Template talk:Iranian architecture"><span title="Discuss this template" style=";;background:none transparent;border:none;;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Iranian_architecture&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:110%;"><a href="/wiki/Iranian_architecture" title="Iranian architecture">Iranian architecture</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Styles</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;"><b><a href="/wiki/Parsian_style" title="Parsian style">Parsian style</a></b>&#160;<span style="font-weight:bold;">·</span>  (includes <a href="/wiki/Pre-Parsian_style" title="Pre-Parsian style">pre-Parsian style</a> and <a href="/wiki/Achaemenid_architecture" title="Achaemenid architecture">Achaemenid architecture</a>)<br />
+<b><a href="/wiki/Parthian_style" title="Parthian style">Parthian style</a></b>&#160;<span style="font-weight:bold;">·</span>  (includes <a href="/wiki/Sassanid_architecture" title="Sassanid architecture" class="mw-redirect">Sassanid architecture</a>)<br />
+<b><a href="/wiki/Khorasani_style" title="Khorasani style">Khorasani style</a></b>&#160;<span style="font-weight:bold;">·</span>  <b><a href="/wiki/Razi_style" title="Razi style">Razi style</a></b>&#160;<span style="font-weight:bold;">·</span>  <b><a href="/wiki/Azari_style" title="Azari style">Azari style</a></b>&#160;<span style="font-weight:bold;">·</span>  <b><a href="/wiki/Isfahani_style" title="Isfahani style">Isfahani style</a></b></div>
+</td>
+<td class="navbox-image" rowspan="9" style="width:0%;padding:0px 0px 0px 2px;">
+<div><a href="/wiki/File:Khayam.jpg" class="image"><img alt="Khayam.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Khayam.jpg/90px-Khayam.jpg" width="90" height="156" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Khayam.jpg/135px-Khayam.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/72/Khayam.jpg/180px-Khayam.jpg 2x" /></a></div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Elements</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;"><a href="/wiki/Bazaar" title="Bazaar">Bazaars</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Persian_gardens" title="Persian gardens">The Persian Garden (hayāt)</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Windcatcher" title="Windcatcher">Windcatchers</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Shabestan" title="Shabestan">Shabestan</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Kucheh" title="Kucheh">Kucheh</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Talar" title="Talar">Talar</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Iwan" title="Iwan">Iwan</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Howz" title="Howz">Howz</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Panjdari" title="Panjdari">Panjdari</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Hashti" title="Hashti">Hashti</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Andaruni" title="Andaruni">Andaruni</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/w/index.php?title=Biruni_(Persian_architecture)&amp;action=edit&amp;redlink=1" class="new" title="Biruni (Persian architecture) (page does not exist)">Biruni</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/w/index.php?title=Dalan_e_Vorudi&amp;action=edit&amp;redlink=1" class="new" title="Dalan e Vorudi (page does not exist)">Dalan e Vorudi</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Qanat" title="Qanat">Qanat</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Qanat#Iran" title="Qanat">Kariz</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Gonbad" title="Gonbad">Gonbad</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Ab_anbar" title="Ab anbar">Ab anbar</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Yakhchal" title="Yakhchal">Yakhchal</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Caravanserai" title="Caravanserai">Caravanserais</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Robat" title="Robat">Robats</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Tower" title="Tower">Burj</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Khanqah" title="Khanqah">Khaneqah</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Tekyeh" title="Tekyeh">Tekyeh</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Sahn" title="Sahn">Sahn</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Imamzadeh" title="Imamzadeh">Imamzadeh</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Mosque" title="Mosque">Mosques</a></div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Notable traditional cities</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;"><a href="/wiki/Architecture_of_Tehran" title="Architecture of Tehran">Architecture of Tehran</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Bam,_Iran" title="Bam, Iran">Bam</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Bukhara" title="Bukhara">Bukhara</a>&#160;<span style="font-weight:bold;">·</span> <a href="/wiki/Ctesiphon" title="Ctesiphon">Ctesiphon</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Derbent" title="Derbent">Derbent</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Herat" title="Herat">Herat</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Gur-e_Amir" title="Gur-e Amir">Gur-e Amir</a> &#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Isfahan" title="Isfahan">Isfahan</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Amol" title="Amol">Amol</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Kashan" title="Kashan">Kashan</a> &#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Mashhad" title="Mashhad">Mashhad</a> &#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Merv" title="Merv">Merv</a> &#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Nishapur" title="Nishapur">Nishapur</a> &#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Persepolis" title="Persepolis">Persepolis</a> &#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Qazvin_(city)" title="Qazvin (city)" class="mw-redirect">Qazvin</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Qom" title="Qom">Qom</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Samarkand" title="Samarkand">Samarkand</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Shahrisabz" title="Shahrisabz">Shahrisabz</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Shiraz,_Iran" title="Shiraz, Iran" class="mw-redirect">Shiraz</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Susa" title="Susa">Susa</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Tabriz" title="Tabriz">Tabriz</a> &#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Takht-e_Soleym%C4%81n" title="Takht-e Soleymān">Takht-i-Suleiman</a> &#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Yazd" title="Yazd">Yazd</a></div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Theory and analysis</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;"><a href="/wiki/Traditional_Persian_residential_architecture" title="Traditional Persian residential architecture">Traditional Persian residential architecture</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Traditional_water_sources_of_Persian_antiquity" title="Traditional water sources of Persian antiquity">Traditional water sources of Persian antiquity</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Islamic_architecture" title="Islamic architecture">Islamic architecture</a></div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Lists</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;"><a href="/wiki/List_of_ab_anbars_of_Qazvin" title="List of ab anbars of Qazvin">List of ab anbars of Qazvin</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/List_of_historical_Iranian_architects" title="List of historical Iranian architects">List of historical Iranian architects</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/List_of_mosques" title="List of mosques">List of mosques</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Category:Castles_in_Iran" title="Category:Castles in Iran"><i>Arg</i>s, castles, and <i>ghal'eh</i>s</a>&#160;<span style="font-weight:bold;">·</span>  <a href="/wiki/Ziyarat#Iran" title="Ziyarat">List of ziyarat-gahs</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.528 seconds
+Real time usage: 0.577 seconds
+Preprocessor visited node count: 1945/1000000
+Preprocessor generated node count: 12231/1500000
+Post‐expand include size: 39927/2048000 bytes
+Template argument size: 835/2048000 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 2/500
+Lua time usage: 0.079s
+Lua memory usage: 2.05 MB
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:40580343-0!*!0!!en!4!* and timestamp 20131014163618
+ -->
+<noscript><img src="//en.wikipedia.org/w/index.php?title=Special:CentralAutoLogin/start&amp;type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>                                <div class="printfooter">
+                Retrieved from "<a href="http://en.wikipedia.org/w/index.php?title=Zeinodin_Caravanserai&amp;oldid=577153182">http://en.wikipedia.org/w/index.php?title=Zeinodin_Caravanserai&amp;oldid=577153182</a>"              </div>
+                                                <div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Caravanserais" title="Category:Caravanserais">Caravanserais</a></li><li><a href="/wiki/Category:Islamic_architecture" title="Category:Islamic architecture">Islamic architecture</a></li><li><a href="/wiki/Category:Iranian_architecture" title="Category:Iranian architecture">Iranian architecture</a></li><li><a href="/wiki/Category:Silk_Road" title="Category:Silk Road">Silk Road</a></li><li><a href="/wiki/Category:Persian_words_and_phrases" title="Category:Persian words and phrases">Persian words and phrases</a></li><li><a href="/wiki/Category:Hotels_in_Iran" title="Category:Hotels in Iran">Hotels in Iran</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Use_dmy_dates_from_October_2013" title="Category:Use dmy dates from October 2013">Use dmy dates from October 2013</a></li></ul></div></div>                                                <div class="visualClear"></div>
+                            </div>
+        </div>
+        <div id="mw-navigation">
+            <h2>Navigation menu</h2>
+            <div id="mw-head">
+                <div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+    <h3 id="p-personal-label">Personal tools</h3>
+    <ul>
+<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Zeinodin+Caravanserai&amp;type=signup">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Zeinodin+Caravanserai" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>  </ul>
+</div>
+                <div id="left-navigation">
+                    <div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+    <h3 id="p-namespaces-label">Namespaces</h3>
+    <ul>
+                    <li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Zeinodin_Caravanserai"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+                    <li  id="ca-talk"><span><a href="/wiki/Talk:Zeinodin_Caravanserai"  title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>
+            </ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+    <h3 id="mw-vector-current-variant">
+        </h3>
+    <h3 id="p-variants-label"><span>Variants</span><a href="#"></a></h3>
+    <div class="menu">
+        <ul>
+                    </ul>
+    </div>
+</div>
+                </div>
+                <div id="right-navigation">
+                    <div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+    <h3 id="p-views-label">Views</h3>
+    <ul>
+                    <li id="ca-view" class="selected"><span><a href="/wiki/Zeinodin_Caravanserai" >Read</a></span></li>
+                    <li id="ca-edit"><span><a href="/w/index.php?title=Zeinodin_Caravanserai&amp;action=edit"  title="You can edit this page. &#10;Please review your changes before saving. [e]" accesskey="e">Edit</a></span></li>
+                    <li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Zeinodin_Caravanserai&amp;action=history"  title="Past versions of this page [h]" accesskey="h">View history</a></span></li>
+            </ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+    <h3 id="p-cactions-label"><span>Actions</span><a href="#"></a></h3>
+    <div class="menu">
+        <ul>
+                    </ul>
+    </div>
+</div>
+<div id="p-search" role="search">
+    <h3><label for="searchInput">Search</label></h3>
+    <form action="/w/index.php" id="searchform">
+                <div id="simpleSearch">
+                        <input name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" />                        <button type="submit" name="button" title="Search Wikipedia for this text" id="searchButton"><img src="//bits.wikimedia.org/static-1.22wmf20/skins/vector/images/search-ltr.png?303-4" alt="Search" width="12" height="13" /></button>                              <input type='hidden' name="title" value="Special:Search"/>
+        </div>
+    </form>
+</div>
+                </div>
+            </div>
+            <div id="mw-panel">
+                    <div id="p-logo" role="banner"><a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+                <div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+    <h3 id='p-navigation-label'>Navigation</h3>
+    <div class="body">
+        <ul>
+            <li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+            <li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+            <li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+            <li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+            <li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+            <li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li>
+        </ul>
+    </div>
+</div>
+<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+    <h3 id='p-interaction-label'>Interaction</h3>
+    <div class="body">
+        <ul>
+            <li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+            <li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+            <li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+            <li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+            <li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>
+        </ul>
+    </div>
+</div>
+<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+    <h3 id='p-tb-label'>Toolbox</h3>
+    <div class="body">
+        <ul>
+            <li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Zeinodin_Caravanserai" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+            <li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Zeinodin_Caravanserai" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+            <li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li>
+            <li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+            <li id="t-permalink"><a href="/w/index.php?title=Zeinodin_Caravanserai&amp;oldid=577153182" title="Permanent link to this revision of the page">Permanent link</a></li>
+            <li id="t-info"><a href="/w/index.php?title=Zeinodin_Caravanserai&amp;action=info">Page information</a></li>
+<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Zeinodin_Caravanserai&amp;id=577153182" title="Information on how to cite this page">Cite this page</a></li>      </ul>
+    </div>
+</div>
+<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+    <h3 id='p-coll-print_export-label'>Print/export</h3>
+    <div class="body">
+        <ul>
+            <li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Zeinodin+Caravanserai">Create a book</a></li>
+            <li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Zeinodin+Caravanserai&amp;oldid=577153182&amp;writer=rl">Download as PDF</a></li>
+            <li id="t-print"><a href="/w/index.php?title=Zeinodin_Caravanserai&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+        </ul>
+    </div>
+</div>
+<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+    <h3 id='p-lang-label'>Languages</h3>
+    <div class="body">
+        <ul>
+            <li class="uls-p-lang-dummy"><a href="#"></a></li>
+        </ul>
+    </div>
+</div>
+            </div>
+        </div>
+        <div id="footer" role="contentinfo">
+                            <ul id="footer-info">
+                                            <li id="footer-info-lastmod"> This page was last modified on 14 October 2013 at 16:36.<br /></li>
+                                            <li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a> <br/>
+Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+                                    </ul>
+                            <ul id="footer-places">
+                                            <li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+                                            <li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+                                            <li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+                                            <li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+                                            <li id="footer-places-developers"><a class="external" href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+                                            <li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/wiki/Zeinodin_Caravanserai" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+                                    </ul>
+                                        <ul id="footer-icons" class="noprint">
+                    <li id="footer-copyrightico">
+                        <a href="//wikimediafoundation.org/"><img src="//bits.wikimedia.org/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a>
+                    </li>
+                    <li id="footer-poweredbyico">
+                        <a href="//www.mediawiki.org/"><img src="//bits.wikimedia.org/static-1.22wmf20/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+                    </li>
+                </ul>
+                        <div style="clear:both"></div>
+        </div>
+        <script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mobile.desktop","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cite","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","mw.MwEmbedSupport.style","ext.articleFeedbackv5.startup","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","mw.PopUpMediaTransform","skins.vector.collapsibleNav"],null,true);
+}</script>
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<!-- Served by mw1073 in 0.189 secs. -->
+    </body>
 </html>

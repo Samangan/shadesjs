@@ -1,7 +1,7 @@
 
 var buster = require("buster");
 var assert = buster.assertions.assert;
-var shade = require("../src/shade.js");
+var shade = require("../src/shades.js");
 
 //TODO: I need to actually test accessing a document and grabbing DOM elements
 //switch from buster to doctest.js http://doctestjs.org/try.html (Should I use karma as well (http://karma-runner.github.io/0.10/index.html))
